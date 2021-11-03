@@ -1,0 +1,129 @@
+body {
+  background: #D8B6A4;
+  font-family: 'Architects Daughter', cursive;
+
+  .tab {
+  padding-bottom: 20px;
+  }
+
+  h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 35px;
+    color: #191A19;
+    text-transform: uppercase;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px; }
+
+    .all {
+      display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+
+    .post {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 60px;
+    }
+
+    h1 {
+    text-align: center;
+    font-size: 50px;
+    height: 100px;
+    line-height: 100px;
+    transition: 0.2s;
+    }
+
+    h1:hover {
+    text-shadow: 5px 5px 5px grey;
+    width: 100%;
+    }
+
+    h1::before {
+    content: "";
+    position: absolute;
+    transform: translateX(0%) translateY(40%);
+    color: white;
+    width: 0.5%;
+    height: 2%;
+    opacity: 0.5;
+    background: black;
+    transition: 0.3s;
+    z-index: -1;
+    border-radius: 5px;
+    }
+    h1:hover::before {
+      transform: translateX(0%) rotate(-200deg) scale(1.2);
+      background: white;
+
+    }
+
+    h1::after {
+      content: "";
+      position: absolute;
+      transform: translateX(-100%) translateY(50%);
+      color: white;
+
+      height: 5%;
+      opacity: 1;
+      background: black;
+      transition: 0.3s;
+      transition-delay: 0.2s;
+      border-radius: 50px;
+
+    }
+    h1:hover::after {
+      background: white;
+      border-radius: 20px;
+    }
+
+
+      button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #1E5128;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 25px;
+    margin-right: 25px;
+      transition: 0.3s;
+    }
+      button:hover {
+        transition: 1s;
+        transform: translateY(-30%);
+        cursor: pointer;
+      }
+
+    img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    }
+    .text {
+    text-align: justify;
+    margin-left: 80px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    }
+
+  }
+
+
+
+ }
